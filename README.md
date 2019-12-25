@@ -5,4 +5,4 @@ Final Project OSG 8 Kelompok 12
 ## Team
 
 - Deden Muhammad Furqon
-- Rifqi Sambas Khairrohman
+- Rifqi Sambas Khairurrohman
