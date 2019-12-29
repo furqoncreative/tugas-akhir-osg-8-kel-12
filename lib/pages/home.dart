@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:final_project/colors.dart';
 import 'package:final_project/models/drink.dart';
+import 'package:final_project/pages/detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:http/http.dart' as http;
@@ -66,12 +67,23 @@ class _HomePageState extends State<HomePage> {
                 return Align(
                   alignment: Alignment.center,
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (BuildContext context) {
+                          // print(drink.drinks[index].strCategory);
+                          return DetailPage(item: drink.drinks[index]);
+                        }
+                      ));
+                    },
                     child: SizedBox(
-                        height: ScreenUtil.instance.setHeight(280.0),
+                        height: MediaQuery.of(context).size.height / 4,
+                        width: MediaQuery.of(context).size.width / 3,
                         child: Container(
                           decoration: BoxDecoration(
-                              border: Border.all(color: primaryColor),
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(color: Colors.grey[400], blurRadius: 0.5, spreadRadius: 0, offset: Offset.fromDirection(1.5, 2)),
+                              ],
                               borderRadius: BorderRadius.circular(8)),
                           child: Column(
                             children: <Widget>[
@@ -83,33 +95,21 @@ class _HomePageState extends State<HomePage> {
                                     color: primaryColor),
                               ),
                               SizedBox(
-                                height: 20,
+                                height: 10,
                               ),
                               Container(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      top: ScreenUtil.instance.setHeight(24),
-                                      right: ScreenUtil.instance.setHeight(16),
-                                      left: ScreenUtil.instance.setHeight(16)),
+                                      top: 2,
+                                      right: 2,
+                                      left: 2,
+                                      bottom: 2
+                                  ),
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: const BorderRadius.all(
-                                          Radius.circular(16.0)),
-                                      boxShadow: <BoxShadow>[
-                                        BoxShadow(
-                                            color: myshadow.withOpacity(0.2),
-                                            offset: const Offset(0.0, 0.0),
-                                            blurRadius: 6.0),
-                                      ],
-                                    ),
-                                    child: ClipRRect(
-                                        borderRadius: const BorderRadius.all(
-                                            Radius.circular(20.0)),
-                                        child: AspectRatio(
-                                          aspectRatio: 1.20,
-                                          child: Image.network(drink
-                                              .drinks[index].strDrinkThumb),
-                                        )),
+                                    child: CircleAvatar(
+                                      radius: MediaQuery.of(context).size.width / 9,
+                                      backgroundImage: NetworkImage(drink.drinks[index].strDrinkThumb),
+                                      ),
                                   ),
                                 ),
                               )
