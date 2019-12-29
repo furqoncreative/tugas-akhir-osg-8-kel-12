@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
     )..init(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Drinks'),
+        title: Text('Cocktail Drinks'),
         backgroundColor: primaryColor,
         actions: <Widget>[
           FlatButton(
