@@ -1,4 +1,4 @@
-import 'dart:convert';
+//import 'dart:convert';
 
 import 'package:final_project/colors.dart';
 import 'package:final_project/models/drink.dart';
@@ -68,12 +68,11 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.center,
                   child: InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(
-                        builder: (BuildContext context) {
-                          // print(drink.drinks[index].strCategory);
-                          return DetailPage(item: drink.drinks[index]);
-                        }
-                      ));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (BuildContext context) {
+                        // print(drink.drinks[index].strCategory);
+                        return DetailPage(item: drink.drinks[index]);
+                      }));
                     },
                     child: SizedBox(
                         height: MediaQuery.of(context).size.height / 4,
@@ -82,7 +81,11 @@ class _HomePageState extends State<HomePage> {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               boxShadow: [
-                                BoxShadow(color: Colors.grey[400], blurRadius: 0.5, spreadRadius: 0, offset: Offset.fromDirection(1.5, 2)),
+                                BoxShadow(
+                                    color: Colors.grey[400],
+                                    blurRadius: 0.5,
+                                    spreadRadius: 0,
+                                    offset: Offset.fromDirection(1.5, 2)),
                               ],
                               borderRadius: BorderRadius.circular(8)),
                           child: Column(
@@ -100,16 +103,14 @@ class _HomePageState extends State<HomePage> {
                               Container(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      top: 2,
-                                      right: 2,
-                                      left: 2,
-                                      bottom: 2
-                                  ),
+                                      top: 2, right: 2, left: 2, bottom: 2),
                                   child: Container(
                                     child: CircleAvatar(
-                                      radius: MediaQuery.of(context).size.width / 9,
-                                      backgroundImage: NetworkImage(drink.drinks[index].strDrinkThumb),
-                                      ),
+                                      radius:
+                                          MediaQuery.of(context).size.width / 9,
+                                      backgroundImage: NetworkImage(
+                                          drink.drinks[index].strDrinkThumb),
+                                    ),
                                   ),
                                 ),
                               )
