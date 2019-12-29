@@ -7,3 +7,4 @@ Final Project OSG 8 Kelompok 12
 - Deden Muhammad Furqon
 - Rifqi Sambas Khairurrohman
 - Wahidun Ni'am Fithriono Asyrofi
+- Ahmad Farhan Fauzan
