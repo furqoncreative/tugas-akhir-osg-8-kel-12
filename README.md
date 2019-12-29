@@ -22,7 +22,7 @@ Aplikasi Flutter menampilkan daftar miunuman cocktail dari [TheCocktailsDB](http
 - [Wahidun Ni'am Fithriono Asyrofi](https://github.com/iamwahid)
     - Data Model (1 poin)
     - Fungsi REST API (2 poin)
-    - Halaman Detail (2 poin)
+    - Halaman Detail (1 poin)
 ---
 
 <!-- ### Online Study Group Eudeka!
