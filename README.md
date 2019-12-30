@@ -6,6 +6,7 @@ Aplikasi Flutter menampilkan daftar miunuman cocktail dari [TheCocktailsDB](http
 <img src="https://i.ibb.co/1JGDRv3/photo6073381260794898758.jpg" alt="splash" width="200"/>
 <img src="https://i.ibb.co/1vQ73KY/photo6073381260794898759.jpg" alt="main" width="200"/>
 <img src="https://i.ibb.co/jf4mT8n/photo6073394459229399963.jpg" alt="detail" width="200"/>
+
 ### Built With
 - [Flutter](https://flutter.dev)
 - [TheCocktailsDB](https://www.thecocktaildb.com/api.php)
