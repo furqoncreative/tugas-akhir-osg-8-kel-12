@@ -3,7 +3,9 @@ Aplikasi Flutter menampilkan daftar miunuman cocktail dari [TheCocktailsDB](http
 
 ### Screenshot
 <!-- ![ESPN Mobile App](https://cdn.vox-cdn.com/thumbor/5ZRASaKMcOSnBZ8FxORHlSIjX8k=/12x0:1237x817/920x613/filters:focal(12x0:1237x817):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/47789201/iPhone_Screenshot.0.0.jpg "source: theverge.com") -->
-
+<img src="https://i.ibb.co/1JGDRv3/photo6073381260794898758.jpg" alt="splash" width="200"/>
+<img src="https://i.ibb.co/1vQ73KY/photo6073381260794898759.jpg" alt="main" width="200"/>
+<img src="https://i.ibb.co/jf4mT8n/photo6073394459229399963.jpg" alt="detail" width="200"/>
 ### Built With
 - [Flutter](https://flutter.dev)
 - [TheCocktailsDB](https://www.thecocktaildb.com/api.php)
